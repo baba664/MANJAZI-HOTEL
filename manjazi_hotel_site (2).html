@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manjazi Hotel - Lusaka 10 Miles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background: #222;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://via.placeholder.com/1400x500?text=Manjazi+Hotel+Lusaka') no-repeat center center/cover;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    }
+    .hero h1 {
+      font-size: 48px;
+      text-align: center;
+    }
+
+    /* Services */
+    .section {
+      padding: 60px 10%;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
+    .services {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .service-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+    .service-card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    /* Booking */
+    .booking {
+      text-align: center;
+      padding: 60px 20px;
+      background: #f1f1f1;
+    }
+    .booking h2 {
+      margin-bottom: 20px;
+    }
+    .booking form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+      gap: 15px;
+    }
+    .booking input, .booking select {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .booking button {
+      padding: 12px;
+      background: #ffcc00;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .booking button:hover {
+      background: #e6b800;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      padding: 30px 10%;
+      text-align: center;
+    }
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Manjazi Hotel</div>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#booking">Book Room</a></li>
+      <li><a href="https://wa.me/260977000000" target="_blank">WhatsApp</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome to Manjazi Hotel - Lusaka 10 Miles</h1>
+  </div>
+
+  <!-- Services -->
+  <div class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <img src="https://via.placeholder.com/300x200?text=Luxury+Rooms" alt="Rooms">
+        <h3>Luxury Rooms</h3>
+        <p>Comfortable and stylish rooms at just K350 per night.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://via.placeholder.com/300x200?text=Restaurant+%26+Bar" alt="Restaurant">
+        <h3>Restaurant & Bar</h3>
+        <p>Delicious meals and refreshing drinks served daily.</p>
+      </div>
+      <div class="service-card">
+        <img src="https://via.placeholder.com/300x200?text=Swimming+Pool" alt="Pool">
+        <h3>Swimming Pool</h3>
+        <p>Relax and refresh at our modern pool area.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Booking Section -->
+  <div class="booking" id="booking">
+    <h2>Book a Room - K350/night</h2>
+    <form id="bookingForm">
+      <input type="text" id="name" placeholder="Your Full Name" required>
+      <input type="date" id="checkin" required>
+      <input type="number" id="nights" placeholder="Number of Nights" min="1" required>
+      <input type="number" id="rooms" placeholder="Number of Rooms" min="1" required>
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Manjazi Hotel | Website made by <a href="https://facebook.com/ezertech" target="_blank">Ezer Tech</a></p>
+    <p>
+      <a href="https://facebook.com/manjazihotel" target="_blank">Manjazi Hotel Facebook</a> | 
+      <a href="https://facebook.com/ezertech" target="_blank">Ezer Tech Facebook</a>
+    </p>
+  </footer>
+
+  <!-- JavaScript for PDF & WhatsApp -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", async function(e){
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const checkin = document.getElementById("checkin").value;
+      const nights = document.getElementById("nights").value;
+      const rooms = document.getElementById("rooms").value;
+      const total = 350 * nights * rooms;
+
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+      doc.text("Manjazi Hotel Booking Confirmation", 20, 20);
+      doc.text("Name: " + name, 20, 40);
+      doc.text("Check-in Date: " + checkin, 20, 50);
+      doc.text("Nights: " + nights, 20, 60);
+      doc.text("Rooms: " + rooms, 20, 70);
+      doc.text("Total Price: K" + total, 20, 80);
+      doc.text("Thank you for booking with Manjazi Hotel!", 20, 100);
+
+      doc.save("Booking.pdf");
+
+      let message = `Hello Manjazi Hotel, I would like to book a room.\nName: ${name}\nCheck-in: ${checkin}\nNights: ${nights}\nRooms: ${rooms}\nTotal: K${total}`;
+      window.open("https://wa.me/260777652306?text=" + encodeURIComponent(message), "_blank");
+    });
+  </script>
+
+</body>
+</html>                                                                  
